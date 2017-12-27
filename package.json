@@ -1,6 +1,7 @@
 {
   "name": "euterpe.work",
   "version": "0.1.0",
+  "homepage": "https://euterpe.jp",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
@@ -10,7 +11,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
